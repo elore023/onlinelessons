@@ -3,28 +3,28 @@ let firstName = 'Erica';
 let lastName = 'Loret de Mola';
 console.log (firstName, lastName);
 
-let shirtSize = medium 
+let shirtSize = 'medium';
 let price = 10;
 console.log (shirtSize + " " + price);
 
 let x = 0;
-let y = (x==0)? 1; 0; 
+let y = (x==0)? 1: 0; 
 console.log (x);
 
-let x = 5;
-let y = 6;
-let z = x + y;
+let x1 = 5;
+let y2 = 6;
+let z = x1 + y2;
 console.log (z);
 
 let price1 = 10;
 let price2 = 3;
-let total = price1 + price2; 
+let total = getSum(price1,price2); 
 console.log (total);
 
 //constants 
 
 const interestRate = 0.3; 
-interestRate = 1;
+// interestRate = 1;
 console.log(interestRate);
 
 
@@ -84,7 +84,7 @@ let drinkOptions = [
     'lemonade', 
     'icedtea'
 ];
-console.log(drinkOptions);
+console.log(drinkOptions[1]);//will show sprite
 
 let cars = [
     'BMW', 
@@ -92,23 +92,28 @@ let cars = [
     'Audi', 
     'Mercedes'
 ];
-console.log(cars);
+console.log(cars[2]);//shows audi
 
 //Functions - set of statements that performs a task or calculates a value 
 
-function greet(name, lastName) {
+/**
+ * Greets a person and returns a hello based on a persons name and last name
+ * @param {*} name - 
+ * @param {*} lastName 
+ */
+function greetCustomer(name, lastName) {
     console.log('Hello' + name + '' + lastName);
 }
 
-greet('Erica', 'Loret de Mola'); 
-greet('Carlos', 'Almonte');
+greetCustomer('Erica', 'Loret de Mola'); 
+greetCustomer('Carlos', 'Almonte');
 
 //functions do NOT need to be terminated with a ;
 // name is a parameter of the greet function and Erica is an argument (the value) 
 
 
-let x = myFunction(4, 5);
-function myFunction(a, b) {
+let x2 = getSum(4, 5);
+function getSum(a, b) {
     return a + b; 
 }
 
